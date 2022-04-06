@@ -44,7 +44,7 @@ function convalidate() {
 
     if (userAnswers[0] == randomNumbers[0]) {
         console.log("esatto")
-        document.writeln("Il primo numero è esatto -")
+        document.writeln(`Il primo numero è esatto (${randomNumbers[0]}) -`)
     }
     else if (userAnswers[0] !== randomNumbers[0]) {
         console.log("sbagliato")
@@ -53,7 +53,7 @@ function convalidate() {
 
     if (userAnswers[1] == randomNumbers[1]) {
         console.log("esatto")
-        document.writeln("Il secondo numero è esatto -")
+        document.writeln(`Il secondo numero è esatto (${randomNumbers[1]}) -`)
     }
     else if (userAnswers[1] !== randomNumbers[1]) {
         console.log("sbagliato")
@@ -62,7 +62,7 @@ function convalidate() {
 
     if (userAnswers[2] == randomNumbers[2]) {
         console.log("esatto")
-        document.writeln("Il terzo numero è esatto -")
+        document.writeln(`Il terzo numero è esatto (${randomNumbers[2]}) -`)
     }
     else if (userAnswers[2] !== randomNumbers[2]) {
         console.log("sbagliato")
@@ -71,7 +71,7 @@ function convalidate() {
 
     if (userAnswers[3] == randomNumbers[3]) {
         console.log("esatto")
-        document.writeln("Il quarto numero è esatto -")
+        document.writeln(`Il quarto numero è esatto (${randomNumbers[3]}) -`)
      
     }
     else if (userAnswers[3] !== randomNumbers[3]) {
@@ -81,7 +81,7 @@ function convalidate() {
 
     if (userAnswers[4] == randomNumbers[4]) {
         console.log("esatto")
-        document.writeln("Il quinto numero è esatto -")
+        document.writeln(`Il quinto numero è esatto (${randomNumbers[4]}) -`)
     }
     else if (userAnswers[4] !== randomNumbers[4]) {
         console.log("sbagliato")
