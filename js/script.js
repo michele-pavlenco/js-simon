@@ -40,54 +40,20 @@ console.log(userAnswers)
 
 setTimeout(convalidate, 4000)
 
+
 function convalidate() {
 
-    if (userAnswers[0] == randomNumbers[0]) {
-        console.log("esatto")
-        document.writeln(`Il primo numero è esatto (${randomNumbers[0]}) -`)
-    }
-    else if (userAnswers[0] !== randomNumbers[0]) {
-        console.log("sbagliato")
-        document.writeln(`Il primo numero era ${randomNumbers[0]} -`)
-    }
+    for (let i = 0; i < randomNumbers.length; i++) {
 
-    if (userAnswers[1] == randomNumbers[1]) {
-        console.log("esatto")
-        document.writeln(`Il secondo numero è esatto (${randomNumbers[1]}) -`)
+        if (userAnswers[i] == randomNumbers[i]) {
+            console.log("esatto")
+            document.writeln(`Il numero ${i + 1} è esatto (${randomNumbers[i]}) -`)
+        }
+        else {
+            console.log("sbagliato")
+            document.writeln(`Il primo numero era ${randomNumbers[i]} -`)
+        }
     }
-    else if (userAnswers[1] !== randomNumbers[1]) {
-        console.log("sbagliato")
-        document.writeln(`Il secondonumero  era ${randomNumbers[1]} -`)
-    }
-
-    if (userAnswers[2] == randomNumbers[2]) {
-        console.log("esatto")
-        document.writeln(`Il terzo numero è esatto (${randomNumbers[2]}) -`)
-    }
-    else if (userAnswers[2] !== randomNumbers[2]) {
-        console.log("sbagliato")
-        document.writeln(`Il terzo numero era ${randomNumbers[2]} -`)
-    }
-
-    if (userAnswers[3] == randomNumbers[3]) {
-        console.log("esatto")
-        document.writeln(`Il quarto numero è esatto (${randomNumbers[3]}) -`)
-     
-    }
-    else if (userAnswers[3] !== randomNumbers[3]) {
-        console.log("sbagliato")
-        document.writeln(`Il quarto numero era ${randomNumbers[3]} -`)
-    }
-
-    if (userAnswers[4] == randomNumbers[4]) {
-        console.log("esatto")
-        document.writeln(`Il quinto numero è esatto (${randomNumbers[4]}) -`)
-    }
-    else if (userAnswers[4] !== randomNumbers[4]) {
-        console.log("sbagliato")
-        document.writeln(`Il quinto numero era ${randomNumbers[4]}`)
-    }
-
 }
 
 
@@ -106,29 +72,3 @@ function createInput() {
 }
 
 
-
-/* 
-const userAnswers = []
-
-
-   setTimeout(function () {
-    for (let i = 0; i < randomNumbers.length; i++) {
-        userAnswers.push(prompt("Inserisci i numeri che hai visto"))
-    }
-},3500)
-
-console.log(userAnswers)
-
-// if(userAnswers[0] = randomNumbers[0]){
-//     console.log("esatto")
-// }
-// else if (userAnswers[0] != randomNumbers[0]){
-//     console.log("sbagliato")}
-
-
-function createInput() {
-    let inputOfNumbers = document.createElement("input")
-    inputOfNumbers.setAttribute("type", "number")
-    active.append(inputOfNumbers)
-    console.log(createInput)
-} */
