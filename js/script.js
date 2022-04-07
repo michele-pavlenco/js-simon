@@ -51,7 +51,7 @@ function convalidate() {
         }
         else {
             console.log("sbagliato")
-            document.writeln(`Il primo numero era ${randomNumbers[i]} -`)
+            document.writeln(`Il numero ${i + 1} era ${randomNumbers[i]} -`)
         }
     }
 }
